@@ -3,6 +3,7 @@ const connection = require('./database/connection');
 
 /** Controllers */
 const OngsController = require('./controllers/OngsController');
+const IncidentsController = require('./controllers/IncidentsController');
 
 const routes = express.Router();
 
@@ -10,4 +11,7 @@ const routes = express.Router();
 routes.get('/ongs', OngsController.index);
 routes.post('/ongs', OngsController.store);
 
+/** Incidents */
+routes.get('/incidents', IncidentsController.index);
+routes.post('/incidents', IncidentsController.store);
 module.exports = routes;
