@@ -2,12 +2,12 @@ import React from 'react';
 
 import './global.css';
 
-/** Components */
-import Logon from "./pages/Logon";
+/** Routes */
+import Routes from "./routes";
 
 function App() {
   return (
-    <Logon/>
+    <Routes/>
   );
 }
 
