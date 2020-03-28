@@ -86,3 +86,5 @@ fabric.properties
 .idea/**/markdown-navigator.xml
 .idea/**/markdown-navigator/
 /.idea/
+backend/node_modules/
+backend/node_modules/debug
