@@ -29,7 +29,11 @@ routes.post('/incidents', IncidentsController.store);
 routes.delete('/incidents/:id', IncidentsController.delete);
 
 /** Profile */
-routes.get('/profile', ProfileController.index);
+routes.get('/profile', celebrate({
+    [Segments.HEADERS]: Joi.object().keys({
+        authorization: Joi.string().required,
+    })
+}), ProfileController.index);
 
 /** Sessions */
 routes.post('/sessions', SessionController.create);
