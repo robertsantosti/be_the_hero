@@ -14,4 +14,5 @@ routes.post('/ongs', OngsController.store);
 /** Incidents */
 routes.get('/incidents', IncidentsController.index);
 routes.post('/incidents', IncidentsController.store);
+routes.delete('/incidents/:id', IncidentsController.delete);
 module.exports = routes;
